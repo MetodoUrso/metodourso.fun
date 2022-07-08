@@ -9,23 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Meta Pixel Code -->
-    <script>
-      !function(f,b,e,v,n,t,s)
-      {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-      n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-      if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-      n.queue=[];t=b.createElement(e);t.async=!0;
-      t.src=v;s=b.getElementsByTagName(e)[0];
-      s.parentNode.insertBefore(t,s)}(window, document,'script',
-      'https://connect.facebook.net/en_US/fbevents.js');
-      fbq('init', '541177924038433');
-      fbq('track', 'PageView');
-    </script>
-    <noscript><img height="1" width="1" style="display:none"
-      src="https://www.facebook.com/tr?id=541177924038433&ev=PageView&noscript=1"
-    /></noscript>
-    <!-- End Meta Pixel Code -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
     <title>Método Urso</title>
     <style>
         * {
@@ -55,25 +39,27 @@
     </style>
 </head>
 <body>
-    <div id="cta" class="grid grid-cols-12 background h-screen">
-        <div class="col-span-12 md:col-span-10 md:col-start-2 lg:col-span-8 lg:col-start-3 xl:col-span-6 xl:col-start-4 text-center mb-14">
+    <!-- Frase de escassez -->
+    <div class="col-span-12 text-xs md:text-sm lg:text-base bg-gray-900 text-center p-3 text-white">
+        <p><span class="text-red-600" data-watching="increase">200</span> pessoas estão assistindo esse vídeo agora!</p>
+    </div>
 
-            <!-- Headline com VSL -->
-            <div class="mt-5">
-                <p class="text-4xl md:text-5xl font-bold color1">MÉTODO URSO</p>
-                <p class="text-lg md:text-2xl lg:text-3xl font-bold -my-1 color2">CUROU MINHA INSÔNIA E ME FAZ</p>
-                <p class="text-lg md:text-2xl lg:text-3xl font-bold mb-5 color2">HIBERNAR EM 12 MINUTOS</p>
-                <script type="text/javascript" id="scr_6282bc93ebcfce000a281e17">var s=document.createElement("script");s.src="https://scripts.converteai.net/8edf1aab-2a40-4e7c-9fa1-5365271d5481/players/6282bc93ebcfce000a281e17/player.js",s.async=!0,document.head.appendChild(s);</script>
-                <p class="text-xs md:text-sm lg:text-base font-medium mt-1 color3">🔈POR FAVOR, VERIFIQUE SE O SEU SOM ESTÁ LIGADO!</p>
-            </div>
+    <div id="main" class="grid grid-cols-12 background h-screen">
 
+        <!-- Headline com VSL -->
+        <div class="col-span-12 md:col-span-10 md:col-start-2 lg:col-span-8 lg:col-start-3 xl:col-span-6 xl:col-start-4 text-lg md:text-2xl lg:text-4xl text-center font-bold mt-3 mb-10">
+            <p class="color2">Você pode estar se matando!!</p>
+            <p class="color1">Elimine a Insônia em 12 minutos</p>
+            <p class="color2 mb-3">Sem gastar absurdos com remédios</p>
+            <script type="text/javascript" id="scr_6259fdcda95eb80009cf0f88">var s=document.createElement("script");s.src="https://cdn.converteai.net/0396c126-dc9a-443a-870d-ab97da8d0432/players/6259fdcda95eb80009cf0f88/player.js",s.async=!0,document.head.appendChild(s);</script>
+            <p class="text-xs md:text-sm lg:text-base mt-1 color3">🔈POR FAVOR, VERIFIQUE SE O SEU SOM ESTÁ LIGADO!</p>
         </div>
 
-        <div id="cta1" class="col-span-12 lg:col-span-10 lg:col-start-2 text-center space-y-14 hidden">
+        <div id="cta" class="col-span-12 lg:col-span-10 lg:col-start-2 text-center space-y-10">
 
             <!-- Botão de compra -->
             <div class="text-base md:text-lg lg:text-2xl text-white font-bold">
-                <a class="rounded-full p-5 color5" href="https://pay.kiwify.com.br/aTe2u5k">FAZER PARTE DO HIBERNA12</a>
+                <button class="rounded-full p-5 color5"><a href="https://pay.kiwify.com.br/aTe2u5k">FAZER PARTE DO HIBERNA12</a></button>
             </div>
 
             <!-- Vantagens do Hiberna12 -->
@@ -98,7 +84,7 @@
                     <p class="color3">Com um <strong>sono de qualidade</strong>, tenha total disposição e produtividade para as atividades de seu cotidiano.</p>
                 </div>
             </div>
-            
+
             <!-- Mudança de vida -->
             <div class="rounded-3xl text-center color4">
                 <p class="text-3xl font-bold p-5 color1">Mudança de vida</p>
@@ -121,8 +107,7 @@
             <!-- Bônus RMP e Criança -->
             <div class="flex flex-col lg:flex-row items-center text-center rounded-3xl color4">
                 <div class="p-5 lg:w-1/3">
-                    <p class="text-lg color3">ESPECIAL</p>
-                    <p class="text-3xl font-bold mb-3 color1">2 Bônus Exclusivos Apenas Hoje</p>
+                    <p class="text-3xl font-bold mb-3 color1">2 Bônus Exclusivos <br> Apenas Hoje</p>
                     <p class="text-base color3">Garantindo Hoje o seu acesso ao método Hiberna12, você irá ganhar <strong>2 incríveis Bônus:</strong> <u>Como Dormir com Relaxamento Muscular Progressivo e Como Resolver Distúrbios do Sono em Crianças</u> de forma <strong>totalmente gratuita!</strong></p>
                 </div>
                 <div class="flex justify-center bg-white shadow rounded-3xl p-5 mb-5 lg:mb-0 lg:mx-5 w-full lg:w-1/3">
@@ -133,64 +118,26 @@
                 </div>
             </div>
 
-            <!-- Desconto -->
-            <div class="flex flex-col items-center text-center">
-                <p class="color3"><s>VALOR TOTAL DE R$ 197,00</s></p>
-                <p class="text-2xl text-black font-bold -mt-1 color3">POR R$ 97,00</p>
-            </div>
-
-            <!-- Botão de compra -->
-            <div class="text-base md:text-lg lg:text-2xl text-white font-bold">
-                <a class="rounded-full p-5 color5" href="https://pay.kiwify.com.br/aTe2u5k">FAZER PARTE DO HIBERNA12</a>
-            </div>
-
             <!-- Garantia de 30 dias -->
-            <div class="bg-white shadow rounded-3xl">
-                <div class="flex flex-col md:flex-row items-center text-center pb-5 pt-3 px-5">
-                    <div class="flex justify-center md:w-1/2">
+            <div class="shadow rounded-3xl color4">
+                <div class="flex flex-col items-center text-center pb-5 pt-3 px-5">
+                    <div class="flex justify-center lg:w-1/2">
                         <img class="w-60 h-60" src="imagens/selo-30-dias.png">
                     </div>
-                    <div class="md:w-1/2">
+                    <div class="lg:w-1/2">
                         <p class="text-2xl font-bold my-3 color1">Garantia Hiberna12</p>
-                        <p class="color3">O código de defesa do consumidor (Art. 49) garante 7 dias para solicitar reembolso em caso de insatisfação com o produto. Nós confiamos tanto em nossos estudos e pesquisas que lhe garantimos <strong>30 dias de garantia!</strong></p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Quebra de objeções -->
-            <div class="rounded-3xl shadow color4">
-                <p class="text-3xl font-bold p-5 color1">Perguntas Frequentes</p>
-                <div class="flex flex-col space-y-5">
-                    <div class="bg-white rounded-3xl p-5">
-                        <p class="text-xl font-bold mb-3 color1">O que é o Hiberna12?</p>
-                        <p class="color3">O Hiberna12 é um método baseado nas mais recentes evidências científicas que te ajudam a dormir em até 12 minutos. O Hiberna12 foi capaz de melhorar o sono e de curar a insônia da maioria dos praticantes do método.</p>
-                    </div>
-                    <div class="bg-white rounded-3xl p-5">
-                        <p class="text-xl font-bold mb-3 color1">Como acessar o conteúdo?</p>
-                        <p class="color3">É fácil e prático, logo após a compra do método será enviado para o seu e-mail o usuário e a e senha que fornecem acesso à área de membros da plataforma Kiwify.</p>
-                    </div>
-                    <div class="bg-white rounded-3xl p-5">
-                        <p class="text-xl font-bold mb-3 color1">O que acontece se eu me arrepender da compra?</p>
-                        <p class="color3">Caso você se arrependa da aquisição do método, basta entrar em contato com nossa equipe de atendimento, que os passos necessários para o cancelamento e a devolução integral do dinheiro lhe serão fornecidos.</p>
-                    </div>
-                    <div class="bg-white rounded-3xl p-5">
-                        <p class="text-xl font-bold mb-3 color1">O acesso ao conteúdo é vitalício?</p>
-                        <p class="color3">Sim, após a compra você terá acesso vitalício aos conteúdos e atualizações do método pela plataforma Kiwify!</p>
-                    </div>
-                    <div class="bg-white rounded-3xl p-5">
-                        <p class="text-xl font-bold mb-3 color1">Posso interromper o uso dos medicamentos?</p>
-                        <p class="color3">Cada organismo responde de maneira diferente e individual, porém na maioria dos casos o Hiberna12 foi capaz de livrar as pessoas da dependência dos medicamentos, no entanto, é necessária a consulta de seu médico antes de interromper qualquer tratamento ou uso de remédios.</p>
+                        <p class="color3">O código de defesa do consumidor (Art. 49) garante 7 dias para solicitar reembolso em caso de insatisfação com o produto. Nós confiamos tanto em nossos estudos e pesquisas que lhe garantimos <strong>14 dias de garantia!</strong></p>
                     </div>
                 </div>
             </div>
 
             <!-- Botão de compra -->
             <div class="text-base md:text-lg lg:text-2xl text-white font-bold">
-                <a class="rounded-full p-5 color5" href="https://pay.kiwify.com.br/aTe2u5k">FAZER PARTE DO HIBERNA12</a>
+                <button class="rounded-full p-5 color5"><a href="https://pay.kiwify.com.br/aTe2u5k">FAZER PARTE DO HIBERNA12</a></button>
             </div>
 
             <!-- Rodapé -->
-            <div class="flex flex-col md:flex-row rounded-t-3xl shadow text-white color5">
+            <div class="flex flex-col md:flex-row text-white rounded-t-3xl shadow color5">
                 <div class="flex flex-col items-center justify-center p-5 md:w-1/2">
                     <p class="text-2xl font-bold tracking-widest mb-3">PIRATARIA É CRIME</p>
                     <p class="text-justify">A venda do Método Hiberna12 só pode ser realizada através deste site. Qualquer outro site onde você encontre este programa é uma FALSIFICAÇÃO e vai contra as leis. Evite falsificações e recuse conteúdos ilegais ou pirateados. NÃO adquira programas parecidos e que não são baseados em anos de estudo. Não nos responsabilizamos por compras realizadas em outros sites.</p>
@@ -199,24 +146,49 @@
                     <img class="h-40 w-40" src="imagens/logo.png">
                     <p>Copyright 2022</p>
                     <p>Todos os direitos reservados.</p>
+                    <div class="flex">
+                        <a href="https://metodourso.fun/termos-de-uso">Termos de Uso</a>
+                        <span>&nbsp|&nbsp</span>
+                        <a href="https://metodourso.fun/politicas-de-privacidade">Políticas de Privacidade</a>
+                    </div>
                 </div>
             </div>
 
         </div>
-
-        <!-- Termos de Uso e Politicas de Privacidade -->
-        <div class="col-span-12 flex items-end justify-center text-sm p-3">
-            <a href="https://metodourso.fun/termos-de-uso">Termos de Uso</a>
-            <p>&nbsp|&nbsp</p>
-            <a href="https://metodourso.fun/politicas-de-privacidade">Políticas de Privacidade</a>
-        </div>
-
+        
     </div>
 
     <script>
+        // Número de pessoas assistindo o vídeo
+        const increaseBox = document.querySelector('[data-watching="increase"]');
+        const min = Math.ceil(-50);
+        const max = Math.floor(50);
+
+        function increaseWatching(start) {
+            if (start >= 300) return start - Math.floor(Math.random() * (50));
+            if (start > 200 && start < 300) return start + Math.floor(Math.random() * (25)) - Math.floor(Math.random() * (25));
+            if (start <= 200) return start + Math.floor(Math.random() * (50));
+            return start;
+        }
+
+        function handleIncreaseWatching() {
+            var start = increaseBox.textContent;
+            increaseBox.innerHTML = increaseWatching(Number(start));
+            setTimeout(() => {
+                handleIncreaseWatching();
+            }, 5000);
+        }
+
+        handleIncreaseWatching();
+        
+
         // temporização da Call to Action (em milissegundos)
-        setTimeout(() => {document.getElementById("cta").classList.remove("h-screen")}, 780000);
-        setTimeout(() => {document.getElementById("cta1").classList.remove("hidden")}, 780000);
+        $(document).ready(function() {
+            setTimeout(function() {
+                $('#main').removeClass('h-screen');
+            }, 1000);
+            $('#cta').delay(1000).hide().fadeIn('slow');
+        });
     </script>
 </body>
 </html>
