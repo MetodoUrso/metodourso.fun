@@ -164,7 +164,7 @@
 
         function increaseWatching(start) {
             if (start >= 300) return start - Math.floor(Math.random() * (50));
-            if (start > 200 && start < 300) return start + Math.floor(Math.random() * (50)) - Math.floor(Math.random() * (50));
+            if (start > 200 && start < 300) return start + Math.floor(Math.random() * (25)) - Math.floor(Math.random() * (25));
             if (start <= 200) return start + Math.floor(Math.random() * (50));
             return start;
         }
