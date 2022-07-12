@@ -161,12 +161,10 @@
     <script>
         // Número de pessoas assistindo o vídeo
         const increaseBox = document.querySelector('[data-watching="increase"]');
-        const min = Math.ceil(-50);
-        const max = Math.floor(50);
 
         function increaseWatching(start) {
             if (start >= 300) return start - Math.floor(Math.random() * (50));
-            if (start > 200 && start < 300) return start + Math.floor(Math.random() * (25)) - Math.floor(Math.random() * (25));
+            if (start > 200 && start < 300) return start + Math.floor(Math.random() * (50)) - Math.floor(Math.random() * (50));
             if (start <= 200) return start + Math.floor(Math.random() * (50));
             return start;
         }
