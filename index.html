@@ -41,7 +41,7 @@
 <body>
     <!-- Frase de escassez -->
     <div class="col-span-12 text-xs md:text-sm lg:text-base bg-gray-800 text-center p-3 text-white">
-        <p><span class="text-red-600" data-watching="increase">200</span> pessoas estão assistindo esse vídeo agora!</p>
+        <p><span class="text-red-600" data-watching="increase">137</span> pessoas estão assistindo esse vídeo agora!</p>
     </div>
 
     <div id="main" class="grid grid-cols-12 background h-screen">
@@ -191,9 +191,9 @@
         const increaseBox = document.querySelector('[data-watching="increase"]');
 
         function increaseWatching(start) {
-            if (start >= 300) return start - Math.floor(Math.random() * (50));
-            if (start > 200 && start < 300) return start + Math.floor(Math.random() * (25)) - Math.floor(Math.random() * (25));
-            if (start <= 200) return start + Math.floor(Math.random() * (50));
+            if (start >= 200) return start - Math.floor(Math.random() * (50));
+            if (start > 100 && start < 200) return start + Math.floor(Math.random() * (25)) - Math.floor(Math.random() * (25));
+            if (start <= 100) return start + Math.floor(Math.random() * (50));
             return start;
         }
 
