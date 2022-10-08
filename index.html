@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="imagens/icone.ico" rel="shortcut icon" type="image/x-icon">
     <link href="dist/output.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
     <title>Método Urso</title>
 </head>
 <body class="bg-[#DBD9D0]">
@@ -108,6 +109,33 @@
                 <button class="rounded-full py-4 px-5 bg-[#fa6900]"><a href="https://pay.kiwify.com.br/y6XReOU">FAZER PARTE DO HIBERNA12</a></button>
             </div>
 
+            <!-- Quebra de objeções -->
+            <div class="rounded-3xl bg-[#edeae6] shadow">
+                <p class="text-3xl text-center text-[#fa6900] font-bold p-5">Perguntas Frequentes</p>
+                <div class="flex flex-col text-justify">
+                    <div onclick="faq('#btn1')" class="cursor-pointer border border-[#603313] rounded-xl m-3 p-5">
+                        <p class="text-xl text-[#fa6900] font-bold">O que é o Hiberna12?</p>
+                        <p id="btn1" class="hidden text-[#4b4b4b] mt-3">O Hiberna12 é um método baseado nas mais recentes evidências científicas que te ajudam a dormir em até 12 minutos. O Hiberna12 foi capaz de melhorar o sono e de curar a insônia da maioria dos praticantes do método.</p>
+                    </div>
+                    <div onclick="faq('#btn2')" class="cursor-pointer border border-[#603313] rounded-xl m-3 p-5">
+                        <p class="text-xl text-[#fa6900] font-bold">Como acessar o conteúdo?</p>
+                        <p id="btn2" class="hidden text-[#4b4b4b] mt-3">É fácil e prático, logo após a compra do método será enviado para o seu e-mail o usuário e a e senha que fornecem acesso à área de membros da plataforma Kiwify.</p>
+                    </div>
+                    <div onclick="faq('#btn3')" class="cursor-pointer border border-[#603313] rounded-xl m-3 p-5">
+                        <p class="text-xl text-[#fa6900] font-bold">O que acontece se eu me arrepender da compra?</p>
+                        <p id="btn3" class="hidden color mt-3">Caso você se arrependa da aquisição do método, basta entrar em contato com nossa equipe de atendimento, que os passos necessários para o cancelamento e a devolução integral do dinheiro lhe serão fornecidos.</p>
+                    </div>
+                    <div onclick="faq('#btn4')" class="cursor-pointer border border-[#603313] rounded-xl m-3 p-5">
+                        <p class="text-xl text-[#fa6900] font-bold">O acesso ao conteúdo é vitalício?</p>
+                        <p id="btn4" class="hidden text-[#4b4b4b] mt-3">Sim, após a compra você terá acesso vitalício aos conteúdos e atualizações do método pela plataforma Kiwify!</p>
+                    </div>
+                    <div onclick="faq('#btn5')" class="cursor-pointer border border-[#603313] rounded-xl m-3 p-5">
+                        <p class="text-xl text-[#fa6900] font-bold">Posso interromper o uso dos medicamentos?</p>
+                        <p id="btn5" class="hidden text-[#4b4b4b] mt-3">Cada organismo responde de maneira diferente e individual, porém na maioria dos casos o Hiberna12 foi capaz de livrar as pessoas da dependência dos medicamentos, no entanto, é necessária a consulta de seu médico antes de interromper qualquer tratamento ou uso de remédios.</p>
+                    </div>
+                </div>
+            </div>
+
         </div>
 
         <!-- Rodapé -->
@@ -165,6 +193,11 @@
             }, 5000);
         }
         handleIncreaseWatching();
+
+        // Efeito Quebra de Objeções
+        function faq(value) {
+            $(value).slideToggle();
+        }
     </script>
 </body>
 </html>
