@@ -13,7 +13,7 @@
         <p><span class="text-red-600" data-watching="increase">150</span> pessoas estão assistindo esse vídeo agora!</p>
     </div>
 
-    <div id="main" class="grid grid-cols-12">
+    <div class="grid grid-cols-12">
 
         <!-- Headline e VSL -->
         <div class="col-span-12 md:col-span-10 md:col-start-2 lg:col-span-8 lg:col-start-3 xl:col-span-6 xl:col-start-4 text-lg md:text-2xl lg:text-4xl text-center font-bold mt-3 mb-10">
@@ -24,7 +24,7 @@
             <p class="text-xs md:text-sm lg:text-base text-[#4b4b4b] mt-1">🔈POR FAVOR, VERIFIQUE SE O SEU SOM ESTÁ LIGADO!</p>
         </div>
 
-        <div id="cta" class="col-span-12 lg:col-span-10 lg:col-start-2 text-center space-y-10">
+        <div class="col-span-12 lg:col-span-10 lg:col-start-2 text-center space-y-10">
 
             <!-- Botão de compra -->
             <div class="text-lg lg:text-2xl text-white font-bold">
@@ -110,7 +110,7 @@
         </div>
 
         <!-- Rodapé -->
-        <div id="cta1" class="col-span-12 flex flex-col md:flex-row text-white bg-[#fa6900] shadow mt-10">
+        <div class="col-span-12 flex flex-col md:flex-row text-white bg-[#fa6900] shadow mt-10">
             <div class="flex flex-col items-center justify-center md:w-1/2 p-5">
                 <p class="text-2xl font-bold tracking-widest mb-3">PIRATARIA É CRIME</p>
                 <p class="text-justify">A venda do Método Hiberna12 só pode ser realizada através deste site. Qualquer outro site onde você encontre este programa é uma FALSIFICAÇÃO e vai contra as leis. Evite falsificações e recuse conteúdos ilegais ou pirateados. NÃO adquira programas parecidos e que não são baseados em anos de estudo. Não nos responsabilizamos por compras realizadas em outros sites.</p>
@@ -164,12 +164,6 @@
             }, 5000);
         }
         handleIncreaseWatching();
-        
-        // Temporização do CTA (em milissegundos)
-        $(document).ready(function() {
-            $('#cta').delay(700000).hide().fadeIn('slow');
-            $('#cta1').delay(700000).hide().fadeIn('slow');
-        });
     </script>
 </body>
 </html>
